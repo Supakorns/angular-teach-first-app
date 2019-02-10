@@ -1,0 +1,19 @@
+<!-- <p>
+  {{card.name}} การ binding เข้าไป 
+</p> -->
+
+<div class="d-flex flex-row mt-3">
+  <p class="p-3 align-self-center box">{{card.votes}}</p> <!--กล่องที่โชว์ตัวเลข vote-->
+  <div>
+    <div class="media">
+      <div class="media-body">
+        <h5 class="mt-5">{{card.name}}</h5>
+        <div>
+          <a href="#"><i class="fas fa-arrow-up" (click)="upVote()">upvote</i> </a> <!-- tag a ที่เป็น link เข้าไปใน "#"-->
+          &nbsp;&nbsp;&nbsp;
+          <a href="#"><i class="fas fa-arrow-down" (click)="downVote()">downvote</i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
